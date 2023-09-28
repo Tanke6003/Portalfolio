@@ -1,0 +1,29 @@
+<div class="card w-100">
+    <div class="card-header">
+        {{title}}
+    </div>
+    <div *ngIf="image!=''" class="card-img ">
+        <img [src]="image" alt="Brand" class="card-img-top rounded-0">
+    </div>
+    <div class="card-body">
+        
+        <div class="card-text">
+            <p>
+                {{description}}
+            </p>
+            <!-- TODO: Add tooltip -->
+        </div>
+        
+    </div>
+    <div class="card-footer">
+        <div class="row justify-content-between">
+            <div class="col">
+                <a href="#" class="btn btn-success">Share</a>
+            </div>
+            <div class="col d-flex">
+                <a href="#" class=" ms-auto btn btn-primary ">Details</a>
+            </div>
+        </div>
+
+    </div>
+</div>
