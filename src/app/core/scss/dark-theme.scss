@@ -1,0 +1,49 @@
+$body-bg: #000000;
+$body-color: #ffffff;
+$navbar-bg: #333;
+$navbar-color: #fdfdfd;
+.navbar {
+  background-color: $navbar-bg;
+  color: $navbar-color;
+}
+.navbar .navbar-brand {
+  color: $navbar-color;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #fff;
+  &:hover{
+    text-shadow:
+    0 0 5px rgba(0,178,255,1),
+    0 0 10px rgba(0,178,255,1),
+    0 0 20px rgba(0,178,255,1),
+    0 0 40px rgba(38,104,127,1),
+    0 0 80px rgba(38,104,127,1),
+    0 0 90px rgba(38,104,127,1),
+    0 0 100px rgba(38,104,127,1),
+    0 0 140px rgba(38,104,127,1),
+    0 0 180px rgba(38,104,127,1);
+  }
+
+}
+.nav-item {
+    a{
+  color: $navbar-color;
+  font-weight: 500;
+  font-size: 1.2rem;
+
+  &.active,:hover {
+    color: #fff;
+    text-shadow: 
+        0 0 5px rgb(0, 81, 255),
+        0 0 10px rgb(0, 81, 255),
+        0 0 20px rgb(0, 81, 255),
+        0 0 40px rgb(28, 100, 255),
+        0 0 80px rgb(28, 100, 255),
+        0 0 90px rgb(28, 100, 255),
+        0 0 100px rgb(62, 123, 255),
+        0 0 140px rgb(62, 123, 255),
+        0 0 180px rgb(62, 123, 255);
+    }
+}
+
+}

@@ -1,79 +1,37 @@
 @import '/src/app/core/scss/variables.scss';
 
-html,body{
+
+/* Estilos comunes para ambos temas */
+
+body,html {
     height: 100%;
-    background-color: $backgroun-page;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-}
-.master-page{
-    //background-color: $backgroun-page;
-    color: #fff;
-
-}
-.header-nav-brand-container{
-    a{
-        text-decoration: none;
-        color: #FFFFFF;
-        font-size: 1.6rem;
-        font-weight: 600;
-        &:hover{
-            color: #F2F2F2;
-        }
-    }
-    img{
-        width: 5rem;
-        height: 5rem;
-    }
-}
-.header-navbar-body{
-    padding: 1rem;
-   
-    .header-nav-menu-container
-    {
-       display: flex;
-       align-items: center;
-       a{
-
-        text-decoration: none;
-        color: #3973BF;
-        font-size: 1.1rem;
-        font-weight: 600;
-        &:hover{
-            color: #023059;
-        }
-    }
-       
-    }
-}
-.section-title{
-    font-size: 2rem;
-    font-weight: 500;
-}
-.sub-section-title{
-    margin: 2rem 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-
-}
-.divider-line-section{
-    width: 100%;
-    height: 1px;
-    background-color: #FFFFFF;
-    margin: 1rem 0;
-}
-.divider-line-sub-section{
-    width: 100%;
-    height: 1px;
-    background-color: #ffffffb5;
-    margin: 0.8rem 0;
-}
-.works{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .card-work{
-        margin: 1rem 0;
-        width: 18rem;
-        height: 23rem;
-    }
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  /* Estilos específicos para el tema oscuro */
+  .dark-theme {
+    @import '/src/app/core/scss/dark-theme.scss';
+    background-color: $body-bg;
+    color: $body-color;
+  }
+  
+  /* Estilos específicos para el tema claro */
+  .light-theme {
+    @import '/src/app/core/scss/light-theme.scss';
+    background-color: $body-bg;
+    color: $body-color;
+  }
+  
+  /* Resto de estilos comunes */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+ //como puedo hacer para que cada una de los componentes que comienzen con app- tengan el mismo estilo de fondo y color de letra que el tema que se seleccione
+ app-{
+    background-color: $body-bg;
+    color: $body-color;
+ }
+  
