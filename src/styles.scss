@@ -1,5 +1,5 @@
-@import '/src/app/core/scss/variables.scss';
-
+@import '/src/app/core/scss/variables.scss'; 
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 /* Estilos comunes para ambos temas */
 
@@ -9,6 +9,7 @@ body,html {
     font-family: 'Roboto', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
   }
   
   /* Estilos específicos para el tema oscuro */

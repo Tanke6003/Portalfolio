@@ -2,6 +2,10 @@ $body-bg: #000000;
 $body-color: #ffffff;
 $navbar-bg: #333;
 $navbar-color: #fdfdfd;
+html, body {
+  background-color: $body-bg;
+  color: $body-color;
+}
 .navbar {
   background-color: $navbar-bg;
   color: $navbar-color;
@@ -46,4 +50,16 @@ $navbar-color: #fdfdfd;
     }
 }
 
+}
+.divider-line-section{
+  border-bottom: 1px solid #fff;
+  margin: 1rem 0 1rem 0;
+}
+.btn-theme{
+  i{
+    color: #ccc;
+    &:hover{
+      color: #ffffff;
+    }
+  }
 }

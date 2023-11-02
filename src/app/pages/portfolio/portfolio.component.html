@@ -1,44 +1,90 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="section-title">Works</h2>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Works</h2>
+            </div>
+            <div class="col-12">
+                <div class="divider-line-section"></div>
+            </div>
+    
         </div>
-        <div class="col-12">
-            <div class="divider-line-section"></div>
+        <div class="row pb-2">
+            <div class="col-12">
+                <h3 class="sub-section-title">Web</h3>
+                <div class="divider-line-sub-section"></div>
+            </div>
+        </div>
+        <div class="row justify-content-between ">
+            <div *ngFor="let i of items" class="col-lg-3 pb-4">
+                <app-card-work></app-card-work>
+            </div>
+           
+    
+    
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="sub-section-title">Portable Apps</h3>
+                <div class="divider-line-sub-section"></div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+    
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="sub-section-title">Portable Apps</h3>
+                <div class="divider-line-sub-section"></div>
+            </div>
+        </div>
+        <div class="works">
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+            <div class="card card-work">
+            </div>
+    
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="section-title">Works</h2>
+            </div>
+            <div class="col-12">
+                <div class="divider-line-section"></div>
+            </div>
+    
+        </div>
+        <div class="row pb-2">
+            <div class="col-12">
+                <h3 class="sub-section-title">Web</h3>
+                <div class="divider-line-sub-section"></div>
+            </div>
+        </div>
+        <div class="row justify-content-between ">
+            <div *ngFor="let i of items" class="col-lg-3 pb-4">
+                <app-card-work></app-card-work>
+            </div>
+           
+    
+    
         </div>
 
     </div>
-    <div class="row pb-2">
-        <div class="col-12">
-            <h3 class="sub-section-title">Web</h3>
-            <div class="divider-line-sub-section"></div>
-        </div>
-    </div>
-    <div class="row justify-content-between ">
-        <div *ngFor="let i of items" class="col-lg-3 pb-4">
-            <app-card-work></app-card-work>
-        </div>
-       
-
-
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h3 class="sub-section-title">Portable Apps</h3>
-            <div class="divider-line-sub-section"></div>
-        </div>
-    </div>
-    <div class="works">
-        <div class="card card-work">
-        </div>
-        <div class="card card-work">
-        </div>
-        <div class="card card-work">
-        </div>
-        <div class="card card-work">
-        </div>
-        <div class="card card-work">
-        </div>
-
-    </div>
-</div>
+</body>

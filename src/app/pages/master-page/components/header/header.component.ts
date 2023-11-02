@@ -8,7 +8,9 @@ import { ThemeService } from 'src/app/core/services/theme.service';
 export class HeaderComponent {
   constructor(private _themeService:ThemeService) {}
   ngOnInit() {
-
+  }
+  getSelectedTheme(){
+    return this._themeService.getSelectedTheme();
   }
   changetheme(){
     this._themeService.setTheme(this._themeService.getSelectedTheme() =="dark-theme"?"light-theme":"dark-theme");

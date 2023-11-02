@@ -1,0 +1,13 @@
+<div class="progress-container">
+    <div class="rating" >
+        <h2>
+            <span class="counter" [attr.data-target]="percentage">{{ counter }}</span><sup>%</sup>
+            <br>
+            <span class="title">{{title}}</span>
+        </h2>
+        <div  *ngFor="let i of range(1, percentage)">
+            <div class="block" [style.transform]="'rotate(' + (i * 3.6) + 'deg)'" [style.animation-delay]="(i / (percentage/6)) + 's'"[style.background-color]="color"[style.--color]="color"></div>
+        </div>
+        
+    </div>
+</div>
